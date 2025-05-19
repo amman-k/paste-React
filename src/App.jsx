@@ -1,19 +1,46 @@
-import { useEffect,useState } from 'react'
+import { createBrowserRouter, RouterProvider } from 'react-router'
 import './App.css'
+import Paste from './components/Paste';
+import ViewPaste from './components/Viewpaste';
+import Navbar from './components/navbar';
+import Home from './components/home';
+
+const router=createBrowserRouter(
+  [
+    {
+      path:"/",
+      element:
+      <div>
+        <Navbar />
+        <Home />
+      </div>
+    },
+    {
+      path:"/pastes",
+      element:
+      <div>
+        <Navbar />
+        <Paste />
+      </div>
+    },
+    {
+      path:"/pastes/:id",
+      element:
+      <div>
+        <Navbar />
+        <ViewPaste />
+      </div>
+    },
+  ]
+);
 
 function App() {
-  
-  const [count,setCount]=useState(0);
-  function handleClick(){
-    setCount(count+1)
-  }
+
   return (
-    <>
-      <p>Hello World!</p>
-      <button onClick={handleClick}>Click me</button>
-      <br />count is:{count}
-    </>
-  )
+  <>
+    <RouterProvider router={router}/>
+  </>)
 }
+
 
 export default App
