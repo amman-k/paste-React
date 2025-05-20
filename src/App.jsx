@@ -4,6 +4,7 @@ import Paste from './components/Paste';
 import ViewPaste from './components/Viewpaste';
 import Navbar from './components/navbar';
 import Home from './components/home';
+import { Toaster } from 'react-hot-toast';
 
 const router=createBrowserRouter(
   [
@@ -39,6 +40,7 @@ function App() {
   return (
   <>
     <RouterProvider router={router}/>
+    <Toaster/>
   </>)
 }
 
