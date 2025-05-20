@@ -1,5 +1,5 @@
 @import "tailwindcss";
-button {
+.button1 {
   cursor: pointer;
   font-weight: 700;
   transition: all 0.2s;
@@ -14,21 +14,21 @@ button {
   font-size: 15px;
 }
 
-button:hover {
+.button1:hover {
   background: #c4e201;
 }
 
-button > svg {
+.button1 > svg {
   width: 34px;
   margin-left: 10px;
   transition: transform 0.3s ease-in-out;
 }
 
-button:hover svg {
+.button1:hover svg {
   transform: translateX(5px);
 }
 
-button:active {
+.button1:active {
   transform: scale(0.95);
 }
 
