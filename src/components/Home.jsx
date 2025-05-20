@@ -41,7 +41,7 @@ const home = () => {
         }}
         value={title}
       />
-        <button className="button" onClick={createPaste}>{pasteId?"Update":"Create"}</button>
+        <button className="button1" onClick={createPaste}>{pasteId?"Update":"Create"}</button>
     </div>
     <div>
         <textarea className="border mt-4 p-2 min-w-[500px] m-auto" value={value} onChange={(e)=>{setValue(e.target.value)}} placeholder="Enter text here" rows={20}></textarea>
