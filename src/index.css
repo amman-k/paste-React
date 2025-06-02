@@ -8,11 +8,14 @@
   background: #cfef00;
   border: 1px solid transparent;
   display: flex;
-  align-items: center;
-  position: relative;
-  top: 4px;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
   font-size: 15px;
+  color: black;
+  line-height: 1;           /* Ensures no extra spacing */
+  text-align: center;
 }
+
 
 .button1:hover {
   background: #c4e201;
