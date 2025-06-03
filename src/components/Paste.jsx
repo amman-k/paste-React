@@ -70,14 +70,17 @@ const Paste = () => {
                   {paste.title}
                 </div>
                 <div className="p-2">{paste.content}</div>
-                <div className="flex flex-row gap-4 place-content-evenly mt-2">
-                  <button>
+                <div className="flex flex-row gap-4 justify-end mt-2">
+                  <button className="bg-lime-950 text-lime-400 border border-lime-400 border-b-4 font-medium overflow-hidden relative px-3 py-1 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                    <span class="bg-lime-400 shadow-lime-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
                     <a href={`/?pasteId=${paste?._id}`}>Edit</a>
                   </button>
-                  <button>
+                  <button className="bg-lime-950 text-lime-400 border border-lime-400 border-b-4 font-medium overflow-hidden relative px-3 py-1 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                    <span class="bg-lime-400 shadow-lime-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
                     <a href={`/pastes/${paste?._id}`}>View</a>
                   </button>
-                  <button onClick={() => handleDelete(paste?._id)}>
+                  <button onClick={() => handleDelete(paste?._id)} className="bg-lime-950 text-lime-400 border border-lime-400 border-b-4 font-medium overflow-hidden relative px-3 py-1 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                    <span class="bg-lime-400 shadow-lime-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
                     Delete
                   </button>
                   <button
@@ -85,7 +88,9 @@ const Paste = () => {
                       navigator.clipboard.writeText(paste?.content);
                       toast.success("Copied To Clipboard");
                     }}
+                    className="bg-lime-950 text-lime-400 border border-lime-400 border-b-4 font-medium overflow-hidden relative px-3 py-1 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group"
                   >
+                    <span class="bg-lime-400 shadow-lime-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
                     Copy
                   </button>
                 </div>
