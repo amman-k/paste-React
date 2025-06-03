@@ -11,8 +11,7 @@
   justify-content: center;  /* Center horizontally */
   align-items: center;      /* Center vertically */
   font-size: 15px;
-  color: black;
-  line-height: 1;           /* Ensures no extra spacing */
+  color: black;   
   text-align: center;
 }
 
