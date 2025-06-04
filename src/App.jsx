@@ -2,8 +2,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import './App.css'
 import Paste from './components/Paste';
 import ViewPaste from './components/ViewPaste';
-import Navbar from './components/navbar';
-import Home from './components/home';
+import Navbar from './components/Navbar'
+import Home from './components/Home';
 import { Toaster } from 'react-hot-toast';
 
 const router=createBrowserRouter(
