@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import './App.css'
 import Paste from './components/Paste';
-import ViewPaste from './components/Viewpaste';
+import ViewPaste from './components/ViewPaste';
 import Navbar from './components/navbar';
 import Home from './components/home';
 import { Toaster } from 'react-hot-toast';
